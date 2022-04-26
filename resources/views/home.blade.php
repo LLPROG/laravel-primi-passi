@@ -7,13 +7,13 @@
     <title>Laravel-primi-passi</title>
 </head>
 <body>
-    @foreach ($users as $user)
-
-        <h1>
-            ciao {{ $user['nome'] . ' ' . $user['cognome'] }}
-        </h1>
-
-    @endforeach
+    <header>
+        <ul>
+            <li><a href="{{ route('contact') }}"> Contact </a></li>
+            <li><a href="{{ route('about') }}"> About </a></li>
+            <li><a href="{{ route('progect') }}"> Progect </a></li>
+        </ul>
+    </header>
 
 
 </body>
